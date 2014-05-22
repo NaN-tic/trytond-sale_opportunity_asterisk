@@ -3,12 +3,6 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
-        <record model="ir.ui.view" id="opportunity_asterisk_result_view_form">
-            <field name="model">opportunity.asterisk.result</field>
-            <field name="type">form</field>
-            <field name="name">opportunity_asterisk_result_form</field>
-        </record>
-
         <record model="ir.action.wizard" id="wizard_opportunity_asterisk">
             <field name="name">Call Phone</field>
             <field name="wiz_name">sale.opportunity.asterisk</field>
