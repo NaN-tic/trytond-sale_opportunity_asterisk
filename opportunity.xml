@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This file is part of opportunity_asterisk module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="opportunity_asterisk_result_view_form">
+            <field name="model">opportunity.asterisk.result</field>
+            <field name="type">form</field>
+            <field name="name">opportunity_asterisk_result_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="wizard_opportunity_asterisk">
+            <field name="name">Call Phone</field>
+            <field name="wiz_name">sale.opportunity.asterisk</field>
+            <field name="model">sale.opportunity</field>
+        </record>
+
+        <record model="ir.action.keyword" id="act_wizard_opportunity_asterisk_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">sale.opportunity,-1</field>
+            <field name="action" ref="wizard_opportunity_asterisk"/>
+        </record>
+    </data>
+</tryton>
